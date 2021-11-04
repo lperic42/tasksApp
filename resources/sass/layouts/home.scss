@@ -1,0 +1,66 @@
+.mainWrap{
+    background-color: rgb(206, 205, 205);
+    height: 100vh;
+    overflow: none;
+
+    .headerWrap{
+        display: flex;
+        align-items: center;
+        height: 10%;
+
+
+        .header{
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: right;
+
+            .loginBtn{
+                text-decoration: none;
+                font-variant: all-small-caps;
+                font-weight: 700;
+                color:black;
+                padding: 10px 15px;
+                background-color: rgb(165, 165, 252);
+                border-radius: 5px;
+                transition: all .2s ease-in-out;
+            
+            }
+            .loginBtn:hover{
+                background-color: rgb(141, 141, 250);
+            }
+            .loginBtn:active{
+                color:black;
+            }
+        }
+    }
+
+    .bodyWrap{
+        height: 90%;
+        margin-top: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-28%);
+        //transform: translateX(-5%);
+
+
+        .body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            h1{
+                margin-bottom: 10px;
+                font-variant: all-small-caps;
+                font-weight: 200;
+                font-size: 55px
+            }
+
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}

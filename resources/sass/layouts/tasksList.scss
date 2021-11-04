@@ -1,0 +1,119 @@
+.tasksWrap{
+    min-height: 100vh;
+    height: auto;
+    background-color: #F7F7F7;
+
+    .tasksList{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .tasks{
+        height: 60px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: .3px solid rgba(111, 111, 111, 0.173);
+
+        .profile{
+            padding-left: 50px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .profile:hover{
+            color: #017BFE;
+        }
+        
+        .Btn, .logoutBtn{
+            margin-right: 50px;
+            text-decoration: none;
+            padding: 10px 15px;
+            padding-bottom: 12px;
+            color: rgba(255, 255, 255, 0.865);
+            background-color: #017BFE;
+            border-radius: 5px;
+            font-variant: all-small-caps;
+            font-size: 15px;
+            font-weight: 600;
+            transition: ease-in-out .1s;
+        }
+
+        .Btn{
+            margin-left: 100px;
+        }
+        .Btn:hover, .logoutBtn:hover{
+            background-color: #5C8FC9;
+        }
+    }  
+
+    .tasksList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+
+
+        .singleTask{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .empty{
+                font-style: italic;
+                color: rgb(87, 87, 87);
+            }
+
+            .singleTaskInner{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid rgba(111, 111, 111, 0.173);
+                padding: 10px 0;
+                margin-bottom: 10px;
+                
+                .taskName{
+                    width: 600px;
+                    padding-left: 30px;
+                    text-align: justify;
+                }
+
+                .finishedBtn{
+                    padding: 3px 8px;
+                    padding-bottom: 7px;
+                    color: rgba(255, 255, 255, 0.865);
+                    background-color: #017BFE;
+                    border-radius: 5px;
+                    border: none;
+                    font-variant: all-small-caps;
+                    font-size: 15px;
+                    margin-right: 10px;
+                    transition: all .1s ease-in-out;
+                    cursor: pointer;
+                }
+                .finishedBtn:hover{
+                    background-color: #017bfed9;
+                }
+
+                .deleteBtn{
+                    padding: 3px 8px;
+                    padding-bottom: 7px;
+                    color: rgba(255, 255, 255, 0.865);
+                    background-color: rgb(255, 80, 80);
+                    border-radius: 5px;
+                    border: none;
+                    font-variant: all-small-caps;
+                    font-size: 15px;
+                    margin-right: 10px;
+                    transition: all .1s ease-in-out;
+                    cursor: pointer;
+                }
+                .deleteBtn:hover{
+                    background-color: rgba(255, 80, 80, 0.81);
+                }
+            }
+        }
+    }
+}

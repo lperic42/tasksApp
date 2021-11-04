@@ -1,0 +1,21 @@
+// Layouts
+@use "layouts/home";
+@use "layouts/login";
+@use "layouts/register";
+@use "layouts/dashboard";
+@use "layouts/tasksList";
+@use "layouts/createTask";
+@use "layouts/error";
+
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+// General Rules
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,532 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap);
+.mainWrap {
+  background-color: #cecdcd;
+  height: 100vh;
+  overflow: none;
+}
+.mainWrap .headerWrap {
+  display: flex;
+  align-items: center;
+  height: 10%;
+}
+.mainWrap .headerWrap .header {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+}
+.mainWrap .headerWrap .header .loginBtn {
+  text-decoration: none;
+  font-variant: all-small-caps;
+  font-weight: 700;
+  color: black;
+  padding: 10px 15px;
+  background-color: #a5a5fc;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.mainWrap .headerWrap .header .loginBtn:hover {
+  background-color: #8d8dfa;
+}
+.mainWrap .headerWrap .header .loginBtn:active {
+  color: black;
+}
+.mainWrap .bodyWrap {
+  height: 90%;
+  margin-top: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-28%);
+}
+.mainWrap .bodyWrap .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainWrap .bodyWrap .body h1 {
+  margin-bottom: 10px;
+  font-variant: all-small-caps;
+  font-weight: 200;
+  font-size: 55px;
+}
+.mainWrap .bodyWrap .body p {
+  font-size: 20px;
+}
+
+.loginWrap {
+  background-color: #5C8FC9;
+  height: 100vh;
+  overflow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginWrap .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e4e1e1;
+  border-radius: 15px;
+  background-color: #e4e1e1;
+  box-shadow: 15px 20px #30303022;
+  padding: 30px 25px;
+}
+.loginWrap .login .loginHeading h2 {
+  margin-bottom: 40px;
+  font-variant: all-small-caps;
+  font-size: 30px;
+}
+.loginWrap .loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginWrap .loginForm .inputField {
+  background-color: inherit;
+  border: none;
+  border: 1px solid #767474;
+  border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.loginWrap .loginForm .loginBtn {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #017BFE;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  transition: ease-in-out 0.1s;
+}
+.loginWrap .loginForm .loginBtn:hover {
+  background-color: #5C8FC9;
+}
+.loginWrap .registerCTA {
+  margin-top: 20px;
+}
+.loginWrap .alert {
+  font-variant: all-small-caps;
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: red;
+}
+
+.registerWrap {
+  background-color: #5C8FC9;
+  height: 100vh;
+  overflow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerWrap .register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e4e1e1;
+  border-radius: 15px;
+  background-color: #e4e1e1;
+  box-shadow: 15px 20px #30303022;
+  padding: 30px 25px;
+}
+.registerWrap .register .registerHeading h2 {
+  margin-bottom: 40px;
+  font-variant: all-small-caps;
+  font-size: 30px;
+}
+.registerWrap .registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.registerWrap .registerForm .inputField {
+  background-color: inherit;
+  border: none;
+  border: 1px solid #767474;
+  border-radius: 5px;
+  width: 300px;
+  height: 30px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.registerWrap .registerForm .registerBtn {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #017BFE;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  transition: ease-in-out 0.1s;
+}
+.registerWrap .registerForm .registerBtn:hover {
+  background-color: #5C8FC9;
+}
+.registerWrap .registerCTA {
+  margin-top: 20px;
+}
+.registerWrap .alert {
+  font-variant: all-small-caps;
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: red;
+}
+
+.dashboardWrap {
+  min-height: 100vh;
+  height: auto;
+  background-color: #F7F7F7;
+}
+.dashboardWrap .dashboardHeader {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.3px solid rgba(111, 111, 111, 0.173);
+}
+.dashboardWrap .dashboardHeader .username {
+  margin-left: 50px;
+}
+.dashboardWrap .dashboardHeader .Btn {
+  margin-left: 90px;
+}
+.dashboardWrap .dashboardHeader .logoutBtn, .dashboardWrap .dashboardHeader .Btn {
+  margin-right: 50px;
+  text-decoration: none;
+  padding: 10px 15px;
+  padding-bottom: 12px;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #017BFE;
+  border-radius: 5px;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  font-weight: 600;
+  transition: ease-in-out 0.1s;
+}
+.dashboardWrap .dashboardHeader .logoutBtn:hover, .dashboardWrap .dashboardHeader .Btn:hover {
+  background-color: #5C8FC9;
+}
+.dashboardWrap .dashboardBody {
+  width: 50%;
+  margin: 0 auto;
+}
+.dashboardWrap .dashboardBody .profileInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.dashboardWrap .dashboardBody .profileInfo .totalTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  padding: 90px 0px;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(65, 65, 65, 0.125);
+  border-radius: 10px;
+}
+.dashboardWrap .dashboardBody .profileInfo .totalTasks span {
+  margin-bottom: 10px;
+}
+.dashboardWrap .dashboardBody .profileInfo .totalTasks .header {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.dashboardWrap .dashboardBody .profileInfo .totalTasks .total {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+.dashboardWrap .dashboardBody .profileInfo .finishedTasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  padding: 90px 0px;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(65, 65, 65, 0.125);
+  border-radius: 10px;
+}
+.dashboardWrap .dashboardBody .profileInfo .finishedTasks span {
+  margin-bottom: 10px;
+}
+.dashboardWrap .dashboardBody .profileInfo .finishedTasks .header {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.dashboardWrap .dashboardBody .profileInfo .finishedTasks .total {
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+}
+.dashboardWrap .latestTasksWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.dashboardWrap .latestTasksWrap .latestTasks {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  width: 600px;
+  margin-bottom: 50px;
+}
+.dashboardWrap .latestTasksWrap .latestTasksHeader {
+  background-color: grey;
+  text-align: center;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.dashboardWrap .latestTasksWrap .latestTasksBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  text-align: center;
+  line-height: 25px;
+  min-height: 100px;
+  max-height: 250px;
+  height: auto;
+}
+.dashboardWrap .latestTasksWrap .noTasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f1f1f;
+  line-height: 25px;
+  min-height: 100px;
+  max-height: 250px;
+  height: auto;
+}
+.dashboardWrap .latestTasksWrap .latestTasksFooter {
+  background-color: grey;
+  text-align: center;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-variant: all-small-caps;
+  font-size: 20px;
+}
+.dashboardWrap .latestTasksWrap .latestTasksFooter a {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.tasksWrap {
+  min-height: 100vh;
+  height: auto;
+  background-color: #F7F7F7;
+}
+.tasksWrap .tasksList {
+  width: 90%;
+  margin: 0 auto;
+}
+.tasksWrap .tasks {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.3px solid rgba(111, 111, 111, 0.173);
+}
+.tasksWrap .tasks .profile {
+  padding-left: 50px;
+  text-decoration: none;
+  color: black;
+}
+.tasksWrap .tasks .profile:hover {
+  color: #017BFE;
+}
+.tasksWrap .tasks .Btn, .tasksWrap .tasks .logoutBtn {
+  margin-right: 50px;
+  text-decoration: none;
+  padding: 10px 15px;
+  padding-bottom: 12px;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #017BFE;
+  border-radius: 5px;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  font-weight: 600;
+  transition: ease-in-out 0.1s;
+}
+.tasksWrap .tasks .Btn {
+  margin-left: 100px;
+}
+.tasksWrap .tasks .Btn:hover, .tasksWrap .tasks .logoutBtn:hover {
+  background-color: #5C8FC9;
+}
+.tasksWrap .tasksList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.tasksWrap .tasksList .singleTask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tasksWrap .tasksList .singleTask .empty {
+  font-style: italic;
+  color: #575757;
+}
+.tasksWrap .tasksList .singleTask .singleTaskInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(111, 111, 111, 0.173);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.tasksWrap .tasksList .singleTask .singleTaskInner .taskName {
+  width: 600px;
+  padding-left: 30px;
+  text-align: justify;
+}
+.tasksWrap .tasksList .singleTask .singleTaskInner .finishedBtn {
+  padding: 3px 8px;
+  padding-bottom: 7px;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #017BFE;
+  border-radius: 5px;
+  border: none;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  margin-right: 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.tasksWrap .tasksList .singleTask .singleTaskInner .finishedBtn:hover {
+  background-color: #017bfed9;
+}
+.tasksWrap .tasksList .singleTask .singleTaskInner .deleteBtn {
+  padding: 3px 8px;
+  padding-bottom: 7px;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #ff5050;
+  border-radius: 5px;
+  border: none;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  margin-right: 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+.tasksWrap .tasksList .singleTask .singleTaskInner .deleteBtn:hover {
+  background-color: rgba(255, 80, 80, 0.81);
+}
+
+.createTaskWrap {
+  min-height: 100vh;
+  height: auto;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.createTaskWrap .createTask {
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.createTaskWrap .createTask h3 {
+  padding-bottom: 70px;
+  font-size: 25px;
+}
+.createTaskWrap .createTask .inputField {
+  background-color: inherit;
+  border: none;
+  border: 1px solid #767474;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.createTaskWrap .createTask .error {
+  margin-bottom: 10px;
+  color: red;
+  font-variant: all-small-caps;
+  font-size: 14px;
+}
+.createTaskWrap .createTask .save {
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.865);
+  background-color: #017BFE;
+  font-variant: all-small-caps;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  transition: ease-in-out 0.1s;
+}
+.createTaskWrap .createTask .save:hover {
+  background-color: #5C8FC9;
+}
+
+.error {
+  margin-bottom: 10px;
+  color: red;
+  font-variant: all-small-caps;
+  font-size: 14px;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

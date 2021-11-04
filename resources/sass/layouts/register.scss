@@ -1,0 +1,77 @@
+.registerWrap{
+    background-color: #5C8FC9;
+    height: 100vh;
+    overflow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .register{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(228, 225, 225);
+        border-radius: 15px;
+        background-color: rgb(228, 225, 225);
+        box-shadow: 15px 20px #30303022;
+        padding: 30px 25px;
+
+        .registerHeading h2{
+            margin-bottom: 40px;
+            font-variant: all-small-caps;
+            font-size: 30px;
+        }
+    }
+
+
+    .registerForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .inputField{
+            background-color: inherit;
+            border: none;
+            border: 1px solid rgb(118, 116, 116);
+            border-radius: 5px;
+            width: 300px;
+            height: 30px;
+            font-size: 14px;
+            padding-left: 20px;
+        }
+
+        .registerBtn{
+            width: 90px;
+            height: 30px;
+            margin-top: 10px;
+            border:none;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.865);
+            background-color: #017BFE;
+            font-variant: all-small-caps;
+            font-size: 15px;
+            font-weight: 600;
+            padding-bottom: 3px;
+            transition: ease-in-out .1s;
+        }
+
+        .registerBtn:hover{
+            background-color: #5C8FC9;
+
+        }
+    }
+    .registerCTA{
+        margin-top: 20px;
+    }
+    .alert{
+        font-variant: all-small-caps;
+        font-size: 16px;
+        padding-bottom: 10px;
+        color: red;
+    }
+}
